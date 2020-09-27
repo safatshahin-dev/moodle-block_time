@@ -1,0 +1,198 @@
+/*remove moodle default background, padding and heading*/
+.block_time.card {
+    background-color: transparent;
+    border: none;
+}
+
+.block_time .card-body .card-title {
+    display: none !important;
+}
+
+.block_time .card-body .card-text {
+    margin-top: 0 !important;
+}
+
+.block_time .card-body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.block-time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*remove moodle default background, padding and heading end*/
+
+/*basic size and background of the clock*/
+.block-time-clock {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    position: relative;
+}
+
+/*rotation for clock values*/
+.block-time-clock .block-time-number-container {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.block-time-clock .block-time-number1-container {
+    --rotation: 30deg;
+}
+
+.block-time-clock .block-time-number2-container {
+    --rotation: 60deg;
+}
+
+.block-time-clock .block-time-number3-container {
+    --rotation: 90deg;
+}
+
+.block-time-clock .block-time-number4-container {
+    --rotation: 120deg;
+}
+
+.block-time-clock .block-time-number5-container {
+    --rotation: 150deg;
+}
+
+.block-time-clock .block-time-number6-container {
+    --rotation: 180deg;
+}
+
+.block-time-clock .block-time-number7-container {
+    --rotation: 210deg;
+}
+
+.block-time-clock .block-time-number8-container {
+    --rotation: 240deg;
+}
+
+.block-time-clock .block-time-number9-container {
+    --rotation: 270deg;
+}
+
+.block-time-clock .block-time-number10-container {
+    --rotation: 300deg;
+}
+
+.block-time-clock .block-time-number11-container {
+    --rotation: 330deg;
+}
+
+/*rotation for clock values end*/
+
+/*reverse rotation for fonts*/
+.block-time-clock .block-time-number {
+    --reverserotation: 0;
+    transform: rotate(var(--reverserotation));
+}
+
+.block-time-clock .block-time-number1 {
+    --reverserotation: -30deg;
+}
+
+.block-time-clock .block-time-number2 {
+    --reverserotation: -60deg;
+}
+
+.block-time-clock .block-time-number3 {
+    --reverserotation: -90deg;
+}
+
+.block-time-clock .block-time-number4 {
+    --reverserotation: -120deg;
+}
+
+.block-time-clock .block-time-number5 {
+    --reverserotation: -150deg;
+}
+
+.block-time-clock .block-time-number6 {
+    --reverserotation: 180deg;
+}
+
+.block-time-clock .block-time-number7 {
+    --reverserotation: -210deg;
+}
+
+.block-time-clock .block-time-number8 {
+    --reverserotation: -240deg;
+}
+
+.block-time-clock .block-time-number9 {
+    --reverserotation: -270deg;
+}
+
+.block-time-clock .block-time-number10 {
+    --reverserotation: -300deg;
+}
+
+.block-time-clock .block-time-number11 {
+    --reverserotation: -330deg;
+}
+
+/*reverse rotation for fonts end*/
+
+/*positioning the hands together*/
+.block-time-clock .block-time-hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+/*clock round dial*/
+.block-time-clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+/*different properties for different hand types*/
+.block-time-clock .block-time-hand.block-time-second {
+    width: 1px;
+    height: 40%;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.block-time-clock .block-time-hand.block-time-minute {
+    width: 3px;
+    height: 35%;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.block-time-clock .block-time-hand.block-time-hour {
+    width: 8px;
+    height: 25%;
+    background-color: black;
+    border: 2px solid black;
+}
+
+/*different properties for different hand types end*/
