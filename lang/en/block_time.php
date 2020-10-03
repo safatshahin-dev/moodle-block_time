@@ -37,4 +37,6 @@ $string['number9'] = '9';
 $string['number10'] = '10';
 $string['number11'] = '11';
 $string['number12'] = '12';
+$string['time:addinstance'] = 'Add a new time block';
+$string['time:myaddinstance'] = 'Add a new time block to dashboard';
 
