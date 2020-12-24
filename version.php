@@ -25,6 +25,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_time';
 $plugin->release = '1.1.0';
-$plugin->version = 2020092700;
+$plugin->version = 2020122500;
 $plugin->requires = 2017111300;
 $plugin->maturity = MATURITY_STABLE;
