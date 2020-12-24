@@ -16,8 +16,6 @@
  * Block time js.
  *
  * @package     block_time
- * @copyright   2020 Your Name <safatshahin@gmail.com>
- * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 setInterval(setClock, 1000);
