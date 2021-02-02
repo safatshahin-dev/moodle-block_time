@@ -39,6 +39,6 @@ if ($ADMIN->fulltree) {
     $name = 'block_time/enabledate';
     $title = get_string('enabledate', 'block_time');
     $description = get_string('enabledate_desc', 'block_time');
-    $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
+    $setting = new admin_setting_configcheckbox($name, $title, $description, 1);
     $settings->add($setting);
 }

@@ -42,7 +42,6 @@ define(['jquery', 'core/ajax', 'core/str', 'core/config', 'core/notification', '
         },
         setDate: function (day, month, year) {
             str.get_strings([
-                {'key': 'date', component: 'block_time'},
                 {'key': 'date1', component: 'block_time'},
                 {'key': 'date2', component: 'block_time'},
                 {'key': 'date3', component: 'block_time'},
@@ -55,8 +54,9 @@ define(['jquery', 'core/ajax', 'core/str', 'core/config', 'core/notification', '
                 {'key': 'date10', component: 'block_time'},
                 {'key': 'date11', component: 'block_time'},
                 {'key': 'date12', component: 'block_time'},
+                {'key': 'date', component: 'block_time'}
             ]).done(function (s) {
-                var date = s[0] + ' ' + day + ' ' + s[month] + ' ' + year;
+                var date = s[12] + ' ' + day + ' ' + s[month] + ' ' + year;
                 $('#block-time-date-text').text(date);
             });
         }
