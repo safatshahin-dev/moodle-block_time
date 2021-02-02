@@ -4,11 +4,11 @@
     This template renders the entire block content.
 }}
 
-<div class="block-time-container container">
+<div class="block-time-container container p-3">
     <div class="block-time-clock">
-        <div class="block-time-hand block-time-hour" data-hour-hand></div>
-        <div class="block-time-hand block-time-minute" data-minute-hand></div>
-        <div class="block-time-hand block-time-second" data-second-hand></div>
+        <div class="block-time-hand block-time-hour" id="data-hour-hand"></div>
+        <div class="block-time-hand block-time-minute" id="data-minute-hand"></div>
+        <div class="block-time-hand block-time-second" id="data-second-hand"></div>
         <div class="block-time-number-container block-time-number1-container">
             <div class="block-time-number block-time-number1">{{#str}} number1, block_time {{/str}}</div>
         </div>
@@ -47,4 +47,9 @@
         </div>
     </div>
 </div>
-
+{{#enabledate}}
+    <div class="block-time-date">
+        <div id="block-time-date-text" class="text-center p-3">
+        </div>
+    </div>
+{{/enabledate}}

@@ -17,7 +17,7 @@
  * Block time is defined here.
  *
  * @package     block_time
- * @copyright   2020 Your Name <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -88,6 +88,15 @@ class block_time extends block_base {
      * @return boolean
      */
     public function _self_test() {
+        return true;
+    }
+
+    /**
+     * Enables global configuration of the block in settings.php.
+     *
+     * @return bool True if the global configuration is enabled.
+     */
+    function has_config() {
         return true;
     }
 }

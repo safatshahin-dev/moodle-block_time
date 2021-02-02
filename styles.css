@@ -13,8 +13,7 @@
 }
 
 .block_time .card-body {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 0 !important;
 }
 
 .block-time-container {
@@ -197,3 +196,14 @@
 }
 
 /*different properties for different hand types end*/
+
+/*date area*/
+.block-time-date {
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid rgba(0, 0, 0, .125);
+    width: 100%;
+}
+
+#block-time-date-text {
+    font-size: 1rem;
+}

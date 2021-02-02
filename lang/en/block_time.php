@@ -18,7 +18,7 @@
  *
  * @package     block_time
  * @category    string
- * @copyright   2020 Your Name <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -40,4 +40,25 @@ $string['number12'] = '12';
 $string['time:addinstance'] = 'Add a new time block';
 $string['time:myaddinstance'] = 'Add a new time block to dashboard';
 $string['privacy:metadata'] = 'The time block only displays user time from js.';
+$string['date'] = 'Date:';
+$string['date1'] = 'January';
+$string['date2'] = 'February';
+$string['date3'] = 'March';
+$string['date4'] = 'April';
+$string['date5'] = 'May';
+$string['date6'] = 'June';
+$string['date7'] = 'July';
+$string['date8'] = 'August';
+$string['date9'] = 'September';
+$string['date10'] = 'October';
+$string['date11'] = 'November';
+$string['date12'] = 'December';
+
+//settings
+$string['enabledate'] = 'Enable date';
+$string['enabledate_desc'] = 'View the date with the time in the block.';
+$string['clocktype'] = 'Select clock type';
+$string['clocktype_desc'] = 'Select to view either digital or analogue clock.';
+$string['analog'] = 'Analog';
+$string['digital'] = 'Digital';
 

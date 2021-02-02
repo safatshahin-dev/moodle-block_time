@@ -14,35 +14,31 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 /**
- * Block time renderer.
+ * Block time settings.
  *
  * @package     block_time
  * @copyright   2021 Safat Shahin <safatshahin@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace block_time\output;
-
 defined('MOODLE_INTERNAL') || die;
 
-class renderer extends \plugin_renderer_base {
-    /**
-     * Throws in a call to the JS for AJAX etc.
-     *
-     * @return string html for the page
-     */
-    public function __construct() {
-        global $PAGE;
-        parent::__construct($PAGE, RENDERER_TARGET_GENERAL);
-    }
+if ($ADMIN->fulltree) {
+    //select clock type (coming soon)
+//    $clocktype = array(
+//        '0' => get_string('analog', 'block_time'),
+//        '1' => get_string('digital', 'block_time')
+//    );
+//    $name = 'block_time/clocktype';
+//    $title = get_string('clocktype', 'block_time');
+//    $description = get_string('clocktype_desc', 'block_time');
+//    $setting = new admin_setting_configselect($name, $title, $description, 0, $clocktype);
+//    $settings->add($setting);
 
-    public function render_time() {
-        $enabledate = get_config('block_time', 'enabledate') == 0 ? false: true;
-        $this->page->requires->js_call_amd('block_time/time', 'init', array($enabledate));
-        $data = array(
-            'enabledate' => $enabledate
-        );
-        return parent::render_from_template('block_time/clock', $data);
-    }
-
+    //enable or disable date to be displayed with the clock
+    $name = 'block_time/enabledate';
+    $title = get_string('enabledate', 'block_time');
+    $description = get_string('enabledate_desc', 'block_time');
+    $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
+    $settings->add($setting);
 }
