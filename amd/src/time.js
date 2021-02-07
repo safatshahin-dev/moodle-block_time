@@ -34,7 +34,7 @@ define(['jquery', 'core/ajax', 'core/str', 'core/config', 'core/notification', '
             time.setRotation($('#data-minute-hand'), minutesRatio);
             time.setRotation($('#data-hour-hand'), hoursRatio);
             if (enableDate) {
-                time.setDate(currentDate.getDay(), currentDate.getMonth(), currentDate.getFullYear());
+                time.setDate(currentDate.getDate(), currentDate.getMonth(), currentDate.getFullYear());
             }
         },
         setRotation: function (selector, value) {
