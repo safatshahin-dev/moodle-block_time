@@ -5,15 +5,15 @@
 }
 
 .block_time .card-body .card-title {
-    display: none !important;
+    display: none;
 }
 
 .block_time .card-body .card-text {
-    margin-top: 0 !important;
+    margin-top: 0;
 }
 
 .block_time .card-body {
-    padding: 0 !important;
+    padding: 0;
 }
 
 .block-time-container {

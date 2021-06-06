@@ -17,7 +17,7 @@
  * Plugin version and other meta-data are defined here.
  *
  * @package     block_time
- * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -25,6 +25,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_time';
 $plugin->release = '1.1.0';
-$plugin->version = 2021020701;
+$plugin->version = 2021060600;
 $plugin->requires = 2017111300;
 $plugin->maturity = MATURITY_STABLE;

@@ -18,7 +18,7 @@
  *
  * @package     block_time
  * @category    string
- * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -54,7 +54,7 @@ $string['date10'] = 'October';
 $string['date11'] = 'November';
 $string['date12'] = 'December';
 
-//settings
+// Settings page.
 $string['enabledate'] = 'Enable date';
 $string['enabledate_desc'] = 'View the date with the time in the block.';
 $string['clocktype'] = 'Select clock type';

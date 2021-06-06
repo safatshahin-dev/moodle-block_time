@@ -17,10 +17,17 @@
  * Block time is defined here.
  *
  * @package     block_time
- * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Class block_time
+ *
+ * @package     block_time
+ * @copyright   2021 Safat Shahin <safatshahin@yahoo.com>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class block_time extends block_base {
 
     /**
@@ -54,7 +61,6 @@ class block_time extends block_base {
      * The function is called immediatly after init().
      */
     public function specialization() {
-
         // Load user defined title and make sure it's never empty.
         if (empty($this->config->title)) {
             $this->title = get_string('pluginname', 'block_time');
@@ -82,21 +88,13 @@ class block_time extends block_base {
     }
 
     /**
-     * Tests if this block has been implemented correctly.
-     * Also, $errors isn't used right now
-     *
-     * @return boolean
-     */
-    public function _self_test() {
-        return true;
-    }
-
-    /**
      * Enables global configuration of the block in settings.php.
      *
      * @return bool True if the global configuration is enabled.
      */
-    function has_config() {
+    public function has_config() {
         return true;
     }
+
 }
+

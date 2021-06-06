@@ -17,7 +17,7 @@
  * Block time capabilities.
  *
  * @package     block_time
- * @copyright   2020 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2020 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

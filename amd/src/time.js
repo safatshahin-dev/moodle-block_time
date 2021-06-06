@@ -18,18 +18,18 @@
  * @package     block_time
  */
 
-define(['jquery', 'core/ajax', 'core/str', 'core/config', 'core/notification', 'core/templates'],
-    function($, AJAX, str, mdlcfg, notification, templates) {
+define(['jquery', 'core/ajax', 'core/str'],
+    function($, AJAX, str) {
     var time = {
         init: function(enableDate) {
             time.setPointer(enableDate);
             setInterval(time.setPointer, 1000);
         },
         setPointer: function (enableDate) {
-            const currentDate = new Date();
-            const secondsRatio = currentDate.getSeconds() / 60;
-            const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-            const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
+            var currentDate = new Date();
+            var secondsRatio = currentDate.getSeconds() / 60;
+            var minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
+            var hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
             time.setRotation($('#data-second-hand'), secondsRatio);
             time.setRotation($('#data-minute-hand'), minutesRatio);
             time.setRotation($('#data-hour-hand'), hoursRatio);

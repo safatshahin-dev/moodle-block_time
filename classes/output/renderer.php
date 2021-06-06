@@ -17,7 +17,7 @@
  * Block time renderer.
  *
  * @package     block_time
- * @copyright   2021 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2021 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -25,24 +25,27 @@ namespace block_time\output;
 
 defined('MOODLE_INTERNAL') || die;
 
+/**
+ * Class renderer
+ *
+ * @package block_time
+ * @copyright   2021 Safat Shahin <safatshahin@yahoo.com>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class renderer extends \plugin_renderer_base {
-    /**
-     * Throws in a call to the JS for AJAX etc.
-     *
-     * @return string html for the page
-     */
-    public function __construct() {
-        global $PAGE;
-        parent::__construct($PAGE, RENDERER_TARGET_GENERAL);
-    }
 
+    /**
+     * Render the block.
+     *
+     * @return bool|string
+     */
     public function render_time() {
-        $enabledate = get_config('block_time', 'enabledate') == 0 ? false: true;
+        $enabledate = get_config('block_time', 'enabledate') == 0 ? false : true;
         $this->page->requires->js_call_amd('block_time/time', 'init', array($enabledate));
         $data = array(
             'enabledate' => $enabledate
         );
-        return parent::render_from_template('block_time/clock', $data);
+        return $this->render_from_template('block_time/clock', $data);
     }
 
 }
