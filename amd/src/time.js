@@ -26,10 +26,10 @@ define(['jquery', 'core/ajax', 'core/str'],
             setInterval(time.setPointer, 1000);
         },
         setPointer: function (enableDate) {
-            let currentDate = new Date();
-            let secondsRatio = currentDate.getSeconds() / 60;
-            let minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-            let hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
+            var currentDate = new Date();
+            var secondsRatio = currentDate.getSeconds() / 60;
+            var minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
+            var hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
             time.setRotation($('#data-second-hand'), secondsRatio);
             time.setRotation($('#data-minute-hand'), minutesRatio);
             time.setRotation($('#data-hour-hand'), hoursRatio);
