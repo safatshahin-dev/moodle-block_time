@@ -17,25 +17,14 @@
  * Block time settings.
  *
  * @package     block_time
- * @copyright   2021 Safat Shahin <safatshahin@gmail.com>
+ * @copyright   2021 Safat Shahin <safatshahin@yahoo.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    //select clock type (coming soon)
-//    $clocktype = array(
-//        '0' => get_string('analog', 'block_time'),
-//        '1' => get_string('digital', 'block_time')
-//    );
-//    $name = 'block_time/clocktype';
-//    $title = get_string('clocktype', 'block_time');
-//    $description = get_string('clocktype_desc', 'block_time');
-//    $setting = new admin_setting_configselect($name, $title, $description, 0, $clocktype);
-//    $settings->add($setting);
-
-    //enable or disable date to be displayed with the clock
+    // Enable or disable date to be displayed with the clock.
     $name = 'block_time/enabledate';
     $title = get_string('enabledate', 'block_time');
     $description = get_string('enabledate_desc', 'block_time');
